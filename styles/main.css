@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix {
+    
+}
+/*===========================================================================*/
+                        /* ~~~ MAIN CONTAINER ~~~ */ 
+/*===========================================================================*/
+
+
+.main-container {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px dashed black;
+}
+
