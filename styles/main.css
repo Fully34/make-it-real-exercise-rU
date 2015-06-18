@@ -66,6 +66,32 @@ h4 {
     font-family: "PT Sans Narrow", sans-serif;
 }
 
+.spacing-margin {
+    margin: 0 0 20px 0;
+}
+
+.align-cent {
+    text-align: center;
+}
+
+.vert-align {
+    vertical-align: middle;
+}
+
+.pre {
+    white-space: pre; /* <-- THAT IS AWESOMENESS*/
+}
+
+
+/*===========================  INVISIBLE BORDERS  ===========================*/
+        
+.inv-2-bord {
+    border: 2px solid transparent;
+}
+
+.inv-1-bord {
+    border: 1px solid transparent;
+}
 
 /*===========================================================================*/
                         /* ~~~ HEADER CONTAINER ~~~ */ 
@@ -124,12 +150,12 @@ h4 {
 }
 
 .nav-items:hover {
-    background-color: rgb(74, 205, 106);
+    border: 2px solid rgb(74, 205, 106);
 }
 
-.nav-items:hover a {
-    color: rgb(54, 72, 95)
 
+.nav-items:hover a {
+    color: rgb(74, 205, 106);
 }
 
 /*===========================================================================*/
@@ -162,10 +188,6 @@ h4 {
     margin: 0 auto;
 }
 
-.main-table {
-    font-family: "PT Sans Narrow", sans-serif;
-}
-
 .table-header {
     background-color: #BDC3C7;
     border: 1px solid #999999;
@@ -190,12 +212,19 @@ h4 {
     text-decoration: none;
 }
 
+.table-button:hover {
+    background-color: white;
+    border: 2px ridge #3498DC;
+    color: #3498DC;
+    box-shadow: 2px 2px 7px 1px rgba(52,152,220,0.58);
+}
 
 /*==============================  CODE  =============================*/
         
 .code-container {
     background-color: #BDC3C7;
     margin: 0 0 20px 0;
+    padding: 15px;
 }
 
 .section-image-container {
@@ -227,9 +256,13 @@ h4 {
 
 
 /*===========================================================================*/
-                        /* ~~~ FORM CONTAINER ~~~ */ 
+                        /* ~~~ COMMENT CONTAINER ~~~ */ 
 /*===========================================================================*/
 
+
+
+/*==============================  FORM CONTAINER  ===========================*/
+        
 .form-container {
     display: block;
     position: relative;
@@ -241,6 +274,9 @@ h4 {
     margin: 0 25px 20px 15px;
 }
 
+
+/*==============================  INPUTS  =============================*/
+        
 .comment-input {
     display: inline-block;
     position: relative;
@@ -257,9 +293,14 @@ h4 {
     padding: auto 0;
 }
 
+
+/*=============================  COMMENT FIELD  =============================*/
+
+
 .text-field-container {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .comment-text-field {
@@ -267,3 +308,37 @@ h4 {
 }
 
 
+/*==============================  SUBMIT BUTTON  ===========================*/
+     
+.submit-button {
+    width: 100%;
+    background-color: #B02520;
+    margin-bottom: 20px;
+}   
+
+.subm-but-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.submit-button:hover {
+    background-color: white;
+    border: 2px solid #B02520;
+    box-shadow: 2px 2px 7px 1px rgba(176,37,32,0.55);
+}
+
+.submit-button:hover a {
+    color: #B02520;
+    font-weight: 700;
+}
+
+/*============================  POSTED COMMENTS  ============================*/
+
+.posted-comment-container {
+    display: block;
+    position: relative;
+}
