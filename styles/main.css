@@ -1,19 +1,149 @@
+
+/*===========================================================================*/
+                        /* ~~~ UTILITY ~~~ */ 
+/*===========================================================================*/
+
+
 * {
     box-sizing: border-box;
 }
 
 .clearfix {
-    
+    overflow: hidden;
+    z-index: 1;
 }
-/*===========================================================================*/
-                        /* ~~~ MAIN CONTAINER ~~~ */ 
-/*===========================================================================*/
-
 
 .main-container {
     max-width: 540px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 0 15px;
     border: 1px dashed black;
 }
+
+h1 {
+    font-size: 30px;
+    font-family: "Michroma", sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: "Michroma", sans-serif;
+}
+
+h4 {
+    font-size: 16px;
+    font-family: "Michroma", sans-serif;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/*===========================================================================*/
+                        /* ~~~ HEADER CONTAINER ~~~ */ 
+/*===========================================================================*/
+
+.header-container {
+    display: block;
+    position: relative;
+}
+
+.website-title-container {
+    background-color: rgba(74, 205, 106, .9);
+    display: block;
+    height: 200px;
+    position: relative;
+    top: 5px;
+    z-index: 20;
+}
+
+.website-title-container h1 {
+    color: white;
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+}
+
+.navbar-container {
+    background-color: rgba(54, 72, 95, 1);
+    display: block;
+    position: relative;
+    line-height: 30px;
+    width: 100%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.nav-items {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-items a {
+    color: white; 
+    text-decoration: none;
+    font-size: 9px;
+    font-family: "Michroma", sans-serif;
+    padding: 0 10px;
+}
+
+.nav-items:hover {
+    background-color: rgb(74, 205, 106);
+}
+
+
+
+/*===========================================================================*/
+                        /* ~~~ MAIN CONTENT CONTAINER ~~~ */ 
+/*===========================================================================*/
+
+.main-content-container{
+    display: block;
+    position: relative;
+}
+
+.article-title {
+    margin: 20px 0 20px 20px;
+}
+
+.text-content {
+    margin: 0 40px 20px 40px;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.section-title {
+    margin: 25px 0 25px 25px;
+}
+
+.main-table {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.main-table {
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.table-header {
+    background-color: #BDC3C7;
+    border: 1px solid #999999;
+    font-weight: 700    ;
+    padding: 5px 5px 5px 8px;
+    text-align: left;
+}
+.main-table, .table-row, .table-cell {
+    border: 1px solid #BDC3C7;
+    border-collapse: collapse;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.button {
+    background-color: #3498DC;
+    color: white;
+    font-size: 11px;
+    padding: 8px 13px;
+    text-decoration: none;
+}
+
 
