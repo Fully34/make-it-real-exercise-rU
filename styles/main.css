@@ -177,8 +177,8 @@ h5 {
 }
 
 .nav-items:hover {
-    border: 2px solid rgb(54, 72, 95);
     background-color: rgb(74, 205, 106);
+    box-shadow: 0px 0px 6px 4px rgba(66,204,112,0.8);
 }
 
 
