@@ -14,10 +14,10 @@
 }
 
 .main-container {
+    display: inline-block;
     max-width: 540px;
     margin: 0 auto;
-    padding: 0 15px;
-    border: 1px dashed black;
+    /*padding: 0 15px;*/
     background-color: #EDF0F1;
 }
 
@@ -25,6 +25,9 @@
     display: inline-block;
 }
 
+body {
+    text-align: center;
+}
 /*===========================  SPECIFIC ELEMENTS  ===========================*/
         
 h1 {
@@ -66,7 +69,6 @@ h5 {
     position: relative;
 }        
 .line-break {
-    margin: 0 0 15px 0;
     border:1px solid #BDC3C7;
 }
 
@@ -80,15 +82,19 @@ h5 {
     top: -5px;
     left: 40px;
 }
+
 .text-content {
     margin: 0 40px 20px 40px;
     font-family: "PT Sans Narrow", sans-serif;
 }
 
 .spacing-margin {
-    margin: 0 0 20px 0;
+    margin: 0 20px 20px 20px;
 }
 
+.align-left {
+    text-align: left;
+}
 .align-cent {
     text-align: center;
 }
@@ -121,6 +127,8 @@ h5 {
 .header-container {
     display: block;
     position: relative;
+    width: 540px;
+    margin: 0 auto;
 }
 
 /*================================ TITLE ===============================*/
@@ -169,12 +177,13 @@ h5 {
 }
 
 .nav-items:hover {
-    border: 2px solid rgb(74, 205, 106);
+    border: 2px solid rgb(54, 72, 95);
+    background-color: rgb(74, 205, 106);
 }
 
 
 .nav-items:hover a {
-    color: rgb(74, 205, 106);
+    color: rgb(54, 72, 95);
 }
 
 
@@ -183,11 +192,17 @@ h5 {
 /*===========================================================================*/
 
 .sticky-container {
-
+    background-color: #EDF0F1;
+    display: inline-block;
+    position: absolute;
+    margin: 0 0 0 560px;
+    top: 235px;
+    vertical-align: middle;
+    border-bottom: 3px solid #444444;
 }
 
 .sticky-text {
-
+    padding: 20px;
 }
 
 .sticky-title {
@@ -196,15 +211,21 @@ h5 {
 }
 
 .sticky-link {
-    display: block;
+    display: inline-block;
     position: relative;
     color: #999999;
     text-decoration: none;
     font-size: 13px;
+    padding-left: 20px;
+
 }
 
 .sticky-spacing {
     margin-bottom: 10px;
+}
+
+a.sticky-link:hover {
+    text-decoration: underline;
 }
 /*===========================================================================*/
                         /* ~~~ MAIN CONTENT CONTAINER ~~~ */ 
@@ -232,8 +253,7 @@ h5 {
 /*==============================  TABLE  =============================*/
         
 .main-table {
-    width: 95%;
-    margin: 0 auto;
+    margin: 0 20px 20px 20px;
 }
 
 .table-header {
@@ -271,13 +291,12 @@ h5 {
         
 .code-container {
     background-color: #BDC3C7;
-    margin: 0 0 20px 0;
+    margin: 0 20px 20px 20px;
     padding: 15px;
 }
 
 .section-image-container {
-    width: 95%;
-    margin: 0 auto 20px auto;
+    margin: 0 20px 20px 20px;
     text-align: center;
 }
 
@@ -294,7 +313,7 @@ h5 {
 .ordered-list {
     list-style: decimal;
     font-family: "PT Sans Narrow", sans-serif;
-    margin-left: 20px;
+    margin: 0 20px 0 40px;
 }
 
 .list-item {
@@ -346,9 +365,7 @@ h5 {
 
 
 .text-field-container {
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 20px 20px 20px;
 }
 
 .comment-text-field {
@@ -359,9 +376,8 @@ h5 {
 /*==============================  SUBMIT BUTTON  ===========================*/
      
 .submit-button {
-    width: 100%;
     background-color: #B02520;
-    margin-bottom: 20px;
+    margin: 0 20px 20px 20px;
 }   
 
 .subm-but-link {
