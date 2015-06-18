@@ -1,6 +1,6 @@
 
 /*===========================================================================*/
-                        /* ~~~ UTILITY ~~~ */ 
+                        /* ~~~ UTILITY CLASSES ~~~ */ 
 /*===========================================================================*/
 
 
@@ -20,6 +20,12 @@
     border: 1px dashed black;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
+/*===========================  SPECIFIC ELEMENTS  ===========================*/
+        
 h1 {
     font-size: 30px;
     font-family: "Michroma", sans-serif;
@@ -35,18 +41,44 @@ h4 {
     font-family: "Michroma", sans-serif;
 }
 
-.inline-block {
-    display: inline-block;
+
+/*==============================  FONT  =============================*/
+        
+
+.bold {
+    font-weight: 700;
 }
+
+.pt-sans {
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+
+/*==============================  SUPER RE-USE  =============================*/
+        
+.line-break {
+    margin: 0 0 15px 0;
+    border:1px solid #BDC3C7;
+}
+
+.text-content {
+    margin: 0 40px 20px 40px;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
 
 /*===========================================================================*/
                         /* ~~~ HEADER CONTAINER ~~~ */ 
 /*===========================================================================*/
 
+
+        
 .header-container {
     display: block;
     position: relative;
 }
+
+/*================================ TITLE ===============================*/
 
 .website-title-container {
     background-color: rgba(74, 205, 106, .9);
@@ -64,6 +96,9 @@ h4 {
     bottom: 10px;
 }
 
+
+/*==============================  NAVBAR  =============================*/
+        
 .navbar-container {
     background-color: rgba(54, 72, 95, 1);
     display: block;
@@ -92,7 +127,10 @@ h4 {
     background-color: rgb(74, 205, 106);
 }
 
+.nav-items:hover a {
+    color: rgb(54, 72, 95)
 
+}
 
 /*===========================================================================*/
                         /* ~~~ MAIN CONTENT CONTAINER ~~~ */ 
@@ -103,19 +141,22 @@ h4 {
     position: relative;
 }
 
+
+/*==============================  ARTICLE  =============================*/
+        
 .article-title {
     margin: 20px 0 20px 20px;
 }
 
-.text-content {
-    margin: 0 40px 20px 40px;
-    font-family: "PT Sans Narrow", sans-serif;
-}
-
+/*==============================  SECTION  =============================*/
+        
 .section-title {
     margin: 25px 0 25px 25px;
 }
 
+
+/*==============================  TABLE  =============================*/
+        
 .main-table {
     width: 95%;
     margin: 0 auto;
@@ -137,9 +178,11 @@ h4 {
     border-collapse: collapse;
     padding: 8px;
     vertical-align: middle;
+    text-align: center;
 }
 
-.button {
+
+.table-button {
     background-color: #3498DC;
     color: white;
     font-size: 11px;
@@ -147,6 +190,80 @@ h4 {
     text-decoration: none;
 }
 
+
+/*==============================  CODE  =============================*/
+        
 .code-container {
     background-color: #BDC3C7;
+    margin: 0 0 20px 0;
 }
+
+.section-image-container {
+    width: 95%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+
+/*=============================  SECTION IMAGE  =============================*/
+        
+.section-image {
+    width: 100%;
+}
+
+
+/*==============================  ORDERED LIST  =============================*/
+
+.ordered-list {
+    list-style: decimal;
+    font-family: "PT Sans Narrow", sans-serif;
+    margin-left: 20px;
+}
+
+.list-item {
+    padding: 10px 0;
+}
+
+
+
+/*===========================================================================*/
+                        /* ~~~ FORM CONTAINER ~~~ */ 
+/*===========================================================================*/
+
+.form-container {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.info-container {
+    text-align: right;
+    margin: 0 25px 20px 15px;
+}
+
+.comment-input {
+    display: inline-block;
+    position: relative;
+    right: 0;
+    width: 75%;
+    padding: 3px;
+    margin: 5px 0;
+}
+
+.input-description {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    padding: auto 0;
+}
+
+.text-field-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.comment-text-field {
+    width: 100%;
+}
+
+
