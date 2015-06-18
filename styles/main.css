@@ -18,6 +18,7 @@
     margin: 0 auto;
     padding: 0 15px;
     border: 1px dashed black;
+    background-color: #EDF0F1;
 }
 
 .inline-block {
@@ -41,26 +42,44 @@ h4 {
     font-family: "Michroma", sans-serif;
 }
 
-
+h5 {
+    font-size: 13px;
+    font-family: "Michroma", sans-serif;
+}
 /*==============================  FONT  =============================*/
         
 
-.bold {
-    font-weight: 700;
-}
 
 .pt-sans {
     font-family: "PT Sans Narrow", sans-serif;
 }
 
+/*ONLY FOR PT SANS NARROW*/
+.bold {
+    font-weight: 700;
+}
 
 /*==============================  SUPER RE-USE  =============================*/
-        
+
+.break-container {
+    display: block;
+    position: relative;
+}        
 .line-break {
     margin: 0 0 15px 0;
     border:1px solid #BDC3C7;
 }
 
+.break-text {
+    background-color: #EDF0F1;
+    color: #999999;
+    display: inline-block;
+    font-size: 15px;
+    padding: 0 4px;
+    position: absolute;
+    top: -5px;
+    left: 40px;
+}
 .text-content {
     margin: 0 40px 20px 40px;
     font-family: "PT Sans Narrow", sans-serif;
@@ -158,6 +177,35 @@ h4 {
     color: rgb(74, 205, 106);
 }
 
+
+/*===========================================================================*/
+                        /* ~~~ STICKY MENU ~~~ */ 
+/*===========================================================================*/
+
+.sticky-container {
+
+}
+
+.sticky-text {
+
+}
+
+.sticky-title {
+    display: block;
+    position: relative;
+}
+
+.sticky-link {
+    display: block;
+    position: relative;
+    color: #999999;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.sticky-spacing {
+    margin-bottom: 10px;
+}
 /*===========================================================================*/
                         /* ~~~ MAIN CONTENT CONTAINER ~~~ */ 
 /*===========================================================================*/
@@ -341,4 +389,29 @@ h4 {
 .posted-comment-container {
     display: block;
     position: relative;
+}
+
+.primary-comment-container {
+    display: block;
+    position: relative;
+    padding-left: 10px;
+}
+
+.secondary-comment-container {
+    display:block;
+    position: relative;
+    margin-left: 50px;
+    border-left: 2px solid rgba(204, 204, 204, .9);
+}
+
+.avatar {
+    float: left;
+}
+
+.user-info-container {
+    padding-left: 15px;
+}
+
+.comment-username {
+    
 }

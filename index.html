@@ -11,8 +11,30 @@
 
 </head>
 <body>
+
+    <div class="sticky-container">
+        
+        <div class="sticky-text">
+
+            <h5 class="sticky-title sticky-spacing">Recent Posts</h5>
+            
+            <a href="" class="sticky-link sticky-spacing pt-sans">Another Post</a>
+            <a href="" class="sticky-link sticky-spacing pt-sans">A Cool Story</a>
+            <a href="" class="sticky-link sticky-spacing pt-sans">Useful Tips and Tricks</a>
+
+            <h5 class="sticky-title sticky-spacing">Categories</h5>
+
+            <a href="" class="sticky-link sticky-spacing pt-sans">Web</a>
+            <a href="" class="sticky-link sticky-spacing pt-sans">Dev</a>
+            <a href="" class="sticky-link sticky-spacing pt-sans">CSS</a>
+
+        </div>
+
+    </div>
+
     <div class="main-container">
         
+
         <div class="header-container">
 
             <div class="website-title-container">
@@ -175,8 +197,9 @@ if(coffee.empty) {
                 <div class="form-container">
                     
 
-                    <div class="break-container">
+                    <div class="break-container spacing-margin">
                         <hr class="line-break">
+                        <span class="break-text pt-sans">USER INFO</span>
                     </div>
 
                     <div class="info-container">
@@ -192,8 +215,9 @@ if(coffee.empty) {
 
                     </div>
 
-                    <div class="break-container">
+                    <div class="break-container spacing-margin">
                         <hr class="line-break">
+                        <span class="break-text pt-sans">COMMENT</span>
                     </div> 
 
                     <div class="text-field-container">
@@ -214,12 +238,15 @@ if(coffee.empty) {
 
             <div class="posted-comment-container">
                 
-                <div class="comment-content-container spacing-margin">
+                <div class="primary-comment-container spacing-margin">
 
-                    <img src="http://www.placehold.it/50" alt="">
-                    <h5 class="comment-user"> User 1 </h5>
-                    <p class="date-time"> January 13, 2014</p>
-                    <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quasi repudiandae sed, excepturi totam odio soluta, vitae. Explicabo, incidunt, doloremque?</p>
+                    <img class="avatar" src="http://www.placehold.it/50" alt="">
+
+                    <div class="user-info-container clearfix">
+                        <h5 class="comment-username bold spacing-margin"> User 1 </h5>
+                        <p class="date-time spacing-margin pt-sans"> January 13, 2014</p>
+                    </div>
+                        <p class="comment-content pt-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quasi repudiandae sed, excepturi totam odio soluta, vitae. Explicabo, incidunt, doloremque?</p>
 
                 </div>
 
@@ -227,21 +254,27 @@ if(coffee.empty) {
 
                     <div class="secondary-comment-container spacing-margin">
 
-                        <div class="comment-content-container spacing-margin">
+                        <div class="primary-comment-container spacing-margin">
                                     
-                            <img src="http://www.placehold.it/50" alt="">
-                            <h5 class="comment-user"> User 1 </h5>
-                            <p class="date-time">January 13, 2014</p>
-                            <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius culpa, voluptatibus, nisi alias quibusdam praesentium doloribus nemo. Eos, nam quidem!</p>                        
+                            <img class="avatar" src="http://www.placehold.it/50" alt="">
+
+                            <div class="user-info-container clearfix">
+                                <h5 class="comment-username bold spacing-margin"> User 1 </h5>
+                                <p class="date-time spacing-margin pt-sans">January 13, 2014</p>
+                            </div>                 
+                                <p class="comment-content pt-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius culpa, voluptatibus, nisi alias quibusdam praesentium doloribus nemo. Eos, nam quidem!</p>
 
                         </div>
 
-                        <div class="comment-content-container spacing-margin">
+                        <div class="primary-comment-container spacing-margin">
                             
-                            <img src="http://www.placehold.it/50" alt="">
-                            <h5 class="comment-user"> User 3 </h5>
-                            <p class="date-time">January 13, 2014</p>
-                            <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio recusandae totam magni dolorum ipsa temporibus nostrum doloremque, vel magnam sunt?</p>                        
+                            <img class="avatar" src="http://www.placehold.it/50" alt="">
+
+                            <div class="user-info-container clearfix">
+                                <h5 class="comment-username bold spacing-margin"> User 3 </h5>
+                                <p class="date-time spacing-margin pt-sans">January 13, 2014</p>
+                            </div>
+                                <p class="comment-content pt-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio recusandae totam magni dolorum ipsa temporibus nostrum doloremque, vel magnam sunt?</p>
 
                         </div>
 
@@ -249,12 +282,15 @@ if(coffee.empty) {
 
                 </div>
 
-                <div class="comment-content-container spacing-margin">
+                <div class="primary-comment-container spacing-margin">
 
-                    <img src="http://www.placehold.it/50" alt="">
-                    <h5 class="comment-user"> User 2 </h5>
-                    <p class="date-time">January 13, 2014</p>
-                    <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, autem possimus recusandae in aliquid iste officiis quae doloribus odit nemo!</p>
+                    <img class="avatar" src="http://www.placehold.it/50" alt="">
+
+                    <div class="user-info-container clearfix">
+                        <h5 class="comment-username bold spacing-margin"> User 2 </h5>
+                        <p class="date-time spacing-margin pt-sans">January 13, 2014</p>
+                    </div>
+                        <p class="comment-content pt-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, autem possimus recusandae in aliquid iste officiis quae doloribus odit nemo!</p>
 
                 </div>
 
